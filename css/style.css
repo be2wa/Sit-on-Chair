@@ -2,3 +2,83 @@
     margin: 0;
     padding: 0;
 }
+
+.main_width {
+    width: 1000px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row::after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+header {
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+}
+
+#header_logo {
+    float: left;
+}
+
+#header_nav {
+    float: right;
+}
+
+#header_nav ul {
+    list-style-type: none;
+    color: white;
+}
+
+#header_nav_row {
+    position: relative;
+}
+
+#header_nav_row > li {
+    display: inline-block;
+}
+
+#header_nav_col {
+    padding-top: 30px;
+    position: absolute;
+    background-color: #000;
+    visibility: hidden;
+}
+
+#header_nav_row li:first-child:hover #header_nav_col {
+    visibility: visible;
+}
+
+#welcome {
+    background: #fff;
+    background: -webkit-linear-gradient(#fff, #555);
+    background: -o-linear-gradient(#fff, #555);
+    background: -moz-linear-gradient(#fff, #555);
+    background: linear-gradient(#fff, #555);
+    width: 100%;
+}
+
+#choose {
+    background: #fff;
+    width: 100%;
+}
+
+#pricing {
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+#contact {
+    background: #fff;
+    width: 100%;
+}
+
+footer {
+    background: #fff;
+    width: 100%;
+}
