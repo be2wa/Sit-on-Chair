@@ -11,18 +11,46 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Bold.eot');
+	src: local('../fonts/Raleway Bold'), local('../fonts/Raleway-Bold'),
+		url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Bold.woff2') format('woff2'),
+		url('../fonts/Raleway-Bold.woff') format('woff'),
+		url('../fonts/Raleway-Bold.ttf') format('truetype'),
+		url('../fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Black.eot');
+	src: local('../fonts/Raleway Black'), local('../fonts/Raleway-Black'),
+		url('../fonts/Raleway-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Black.woff2') format('woff2'),
+		url('../fonts/Raleway-Black.woff') format('woff'),
+		url('../fonts/Raleway-Black.ttf') format('truetype'),
+		url('../fonts/Raleway-Black.svg#Raleway-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: Raleway;
     box-sizing: border-box;
+    xborder: 1px solid red;
 }
 
 .main_width {
     width: 1000px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    /* padding-left: 10px;
+    xpadding-right: 10px; */
+    xborder: 1px solid red;
 }
 
 .row::after {
@@ -35,7 +63,12 @@ header, section, footer {
     padding: 10px 0;
 }
 
-.lead_color {
+.accent {
+    color: #24ba9f;
+    font-weight: 800;
+}
+
+.color_accent {
     color: #24ba9f;
 }
 
@@ -77,6 +110,10 @@ header a {
     margin-right: 10px;
 }
 
+#header_nav_row  li:last-child {
+    margin-right: 0;
+}
+
 #header_nav_row > li {
     display: inline-block;
     font-size: 14px;
@@ -90,6 +127,7 @@ header a {
 }
 
 #header_nav_col li {
+    width: 100px;
     background-color: #000;
     padding: 5px 10px;
     font-weight: 400;
@@ -113,8 +151,77 @@ header a {
     background: -webkit-linear-gradient(#fff, #555);
     background: -o-linear-gradient(#fff, #555);
     background: -moz-linear-gradient(#fff, #555);
-    background: linear-gradient(#fff, #555);
+    background: linear-gradient(#fff 40%, #bbb);
     width: 100%;
+}
+
+#welcome_slide_left, #welcome_slide_right {
+    width: 3%;
+    font-size: 66px;
+    margin-top: 18%;
+}
+
+#welcome_img {
+    width: 40%;
+}
+
+#welcome_img {
+    margin-top: 60px;
+}
+
+#welcome_content {
+    position: relative;
+    width: 54%;
+    text-align: center;
+    padding-right: 60px;
+    padding-left: 40px;
+    margin-top: 100px;
+}
+
+img#black_chair {
+    height: 360px;
+}
+
+.floater {
+    float: left;
+}
+
+.welcome_heading {
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.welcome_par {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 150%;
+}
+
+button#more {
+    position: absolute;
+    left: 160px;
+    width: 200px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    background-color: #24ba9f;
+    border-radius: 7px;
+    border-color: transparent;
+}
+
+button#more:visited {
+    outline: none;  /* cannot deal with the ugly border when visited */
+}
+
+button#more:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px #24ba9f;
+}
+
+button#more:active {
+    outline: none;
+    bottom: -41px;  /* it works, but i feel this is messy */
 }
 
 #choose {
