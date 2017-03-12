@@ -119,6 +119,10 @@ header a {
     font-size: 14px;
 }
 
+#header_nav_row li:first-child:hover #header_nav_col {
+    visibility: visible;
+}
+
 #header_nav_col {
     padding-top: 25px;
     position: absolute;
@@ -127,6 +131,7 @@ header a {
 }
 
 #header_nav_col li {
+    position: relative;
     width: 100px;
     background-color: #000;
     padding: 5px 10px;
@@ -134,16 +139,24 @@ header a {
     letter-spacing: normal;
 }
 
+.triangle {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    transform: rotate(45deg);
+    left: 40px;
+    top: -6px;
+}
+
+/*  need to make triangle instead of rotated square, so i can make bckgrnd color change on li:hover (because z-index doesnt want to work in my relative/absolute mess)*/
+
 #header_nav_col li:first-child {
     padding-top: 10px;
 }
 
 #header_nav_col li:last-child {
     padding-bottom: 10px;
-}
-
-#header_nav_row li:first-child:hover #header_nav_col {
-    visibility: visible;
 }
 
 #welcome {
