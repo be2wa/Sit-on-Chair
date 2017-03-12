@@ -249,7 +249,7 @@ button:active {
 
 .choose_box {
     width: 32.33%;
-    height: 250px;
+    height: 260px;
     float: left;
     letter-spacing: 1px;
 }
@@ -260,7 +260,6 @@ button:active {
     background: rgba(255, 255, 255, 0.5);
     position: absolute;
     top: 57%;
-    
     padding-left: 10px;
     padding-top: 20px;
     line-height: 120%;
@@ -272,7 +271,7 @@ button:active {
     background-color: #24ba9f;
 }
 
-#box_1 {
+#choose_box_1 {
     background-image: url(../images/box1_img.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -280,7 +279,7 @@ button:active {
     margin-right: 10px;
 }
 
-#box_2 {
+#choose_box_2 {
     background-image: url(../images/box2_img.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -289,8 +288,8 @@ button:active {
     margin-right: 5px;
 }
 
-#box_3 {
-    padding-top: 30px;
+#choose_box_3 {
+    padding-top: 25px;
     padding-left: 30px;
     padding-right: 10px;
     border: 2px solid #c2c2c2;
@@ -300,9 +299,10 @@ button:active {
 .choose_box h4 {
     padding-left: 3px;
     font-size: 16px;
+    color: #2a2a2a;
 }
 
-#box_3 p {
+#choose_box_3 p {
     padding-top: 20px;
     font-size: 15px;
 }
@@ -312,15 +312,41 @@ button:active {
     width: 100%;
 }
 
+#pricing_row {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
 #pricing h2 {
-    font-size: 18px;
+    font-size: 22px;
     color: #585858;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.big_bar {
+    background-color: #24ba9f;
+    height: 7px;
+    width: 320px;
 }
 
 .price_tag_box {
     float: left;
     width: 32.33%;
     height: 480px;
+}
+
+#price_tag_box_1 {
+    margin-right: 10px;
+}
+
+#price_tag_box_2 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#price_tag_box_3 {
+    margin-left: 10px;
 }
 
 .price_tag {
@@ -332,7 +358,7 @@ button:active {
     border-radius: 4px;
     text-align: center;
 }
-    
+
 .price_tag_hanger_out {
     position: absolute;
     border-radius: 50%;
@@ -411,6 +437,44 @@ ul.pricing_features li:nth-child(2n+1) {
 
 ul.pricing_features li:nth-child(2n+2) {
     background-color: #f1f1f1;
+}
+
+.price_tag:hover {
+    background-color: #24ba9f;
+    border-color: #24ba9f;
+    color: #24ba9f;
+}
+
+.price_tag:hover .price_tag_hanger_out {
+    background-color: #24ba9f;
+    border-color: #24ba9f;
+}
+
+.price_tag:hover .price_tag_hanger_in {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.price_tag:hover h3 {
+    color: #fff;
+}
+
+.price_tag:hover .price_circle {
+    border-color: #24ba9f;
+}
+
+.price_tag:hover li:nth-child(2n+1) {
+    background-color: #fff;
+}
+
+.price_tag:hover li:nth-child(2n+2) {
+    background-color: #e4e4e4;
+}
+
+.price_tag:hover button.join {
+    background-color: #fff;
+    color: #24ba9f;
+    font-weight: 700;
 }
 
 button.join {
