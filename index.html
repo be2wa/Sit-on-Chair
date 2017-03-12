@@ -129,7 +129,28 @@
         </article>
     </section>
     <section id = "contact">
-        <article class = "main_width"></article>
+        <article class = "main_width">
+            <h2>KONTAKT</h2>
+            <div class = "big_bar"></div>
+            <div class = "row" id = "contact_row">
+                <form>
+                    <div class = "contact_box" id = "contact_box_1">
+                        <input type = "text" name = "name" placeholder = "Imię" required>
+                        <input type = "email" name = "surname" placeholder = "email" required>
+                        <textarea name = "message" placeholder = "Wiadomość"></textarea>
+                    </div>
+                    <div class = "contact_box" id = "contact_box_2">
+                        <div id = "contact_img"></div>
+                        <input id = "agree" type = "checkbox" name = "agree" required>
+                        
+                        <!--REQUIRED above doesnt seem to work-->
+                        
+                        <label id = "agree_label" for = "agree">Zgadzam się na przetwarzanie danych osobowych</label>
+                        <input id = "submit" type = "submit" name = "submit" value = "WYŚLIJ">
+                    </div>
+                </form>
+            </div>
+        </article>
     </section>
     <footer>
         <article class = "main_width"></article>

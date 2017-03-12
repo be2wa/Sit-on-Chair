@@ -317,7 +317,7 @@ button:active {
     padding-bottom: 30px;
 }
 
-#pricing h2 {
+h2 {
     font-size: 22px;
     color: #585858;
     padding-top: 20px;
@@ -491,6 +491,10 @@ button.join {
     border-color: transparent;
 }
 
+button.join:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
 button.join:active {
     bottom: 14px;
 }
@@ -498,6 +502,99 @@ button.join:active {
 #contact {
     background: #fff;
     width: 100%;
+}
+
+#contact_row {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.contact_box {
+    float: left;
+    height: 420px;
+}
+
+#contact_box_1 {
+    width: 61.986%;
+    margin-right: 30px;
+}
+
+#contact_box_2 {
+    position: relative;
+    width: 35%;
+}
+
+#contact input:not([type=checkbox]), #contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-size: 30px;
+    border: 1px solid #24ba9f;
+}
+
+#contact textarea {
+    resize: none;
+    height: 180px;
+}
+
+#contact_img {
+    width: 100%;
+    height: 220px;
+    background-image: url('../images/red_chair.png');
+    background-repeat: no-repeat;
+    background-position: 40px 0;
+}
+
+input[type=checkbox] {
+    -ms-transform: scale(4);
+    -moz-transform: scale(4);
+    -webkit-transform: scale(4);
+    -o-transform: scale(4);
+}
+
+#agree {
+    position: absolute;
+    left: 40px;
+    bottom: 160px;
+}
+
+#agree_label {
+    position: absolute;
+    left: 70px;
+    bottom: 150px;
+    color: #7c7c7c;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+#contact #submit {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    width: 90%;
+    height: 60px;
+    color: #fff;
+    line-height: 80%;
+    background-color: #24ba9f;
+    border-radius: 7px;
+    border-color: transparent;
+}
+
+#contact #submit:visited {
+    outline: none;  /* cannot deal with the ugly border when visited */
+}
+
+#contact #submit:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px #24ba9f;
+}
+
+#contact #submit:active {
+    outline: none;
+    bottom: 38px;  /* it works, but i feel this is messy */
 }
 
 footer {
