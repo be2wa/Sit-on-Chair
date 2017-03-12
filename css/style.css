@@ -42,15 +42,15 @@
     padding: 0;
     font-family: Raleway;
     box-sizing: border-box;
-    xborder: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .main_width {
     width: 1000px;
     margin: 0 auto;
     /* padding-left: 10px;
-    xpadding-right: 10px; */
-    xborder: 1px solid red;
+    xpadding-right: 10px;
+    border: 1px solid red; */
 }
 
 .row::after {
@@ -506,7 +506,6 @@ button.join:active {
 
 #contact_row {
     padding-top: 40px;
-    padding-bottom: 50px;
 }
 
 .contact_box {
@@ -555,6 +554,18 @@ input[type=checkbox] {
     -o-transform: scale(4);
 }
 
+/* gotta play with styling this checkbox
+
+input[type=checkbox]:checked {
+    background: none;
+}
+
+input[type=checkbox]:checked:before {
+    background-image: url('../images/form_ok.jpg');
+}
+
+*/
+
 #agree {
     position: absolute;
     left: 40px;
@@ -600,4 +611,45 @@ input[type=checkbox] {
 footer {
     background: #fff;
     width: 100%;
+}
+
+.footer_box {
+    height: 50px;
+}
+
+#footer_box_1 {
+    float: left;
+    width: 61.986%;
+    color: #7c7c7c;
+    padding-top: 15px;
+}
+
+#footer_box_2 {
+    float: right;
+    width: 35%;
+}
+
+#footer_icons {
+    float: left;
+}
+
+#footer_icons a:hover img {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+#footer_logo {
+    float: right;
+    padding-top: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding-top: 15px;
+    color: #7c7c7c;
+}
+
+.accent_fat {
+    font-weight: 900;
 }
