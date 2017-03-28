@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CodersLab</title>
+    <title>Sit On Chair</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -29,8 +29,16 @@
     <section id = "welcome">
         <article class = "main_width">
             <div class = "row">
-                <div class = "floater" id = "welcome_slide_left"><span class = "color_accent">&lt;</span></div>
-                <div class = "floater" id = "welcome_img"><img id = "black_chair" src = "images/black_chair_cut.png" alt = "black chair"></div>
+                <div class = "floater" id = "welcome_slide_left">
+                    <span class = "color_accent">&lt;</span>
+                </div>
+                <div class = "floater" id = "welcome_img">
+                    <ul>
+                        <li><img src = "images/1.png" alt = ""></li>
+                        <li><img src = "images/2.png" alt = ""></li>
+                        <li><img src = "images/3.png" alt = ""></li>
+                    </ul>
+                </div>
                 <div class = "floater" id = "welcome_content">
                     <h1 class = "welcome_heading">SIT <span class = "accent">ON</span> OUR <span class = "accent">CHAIR</span></h1>
                     <p class = "welcome_par">Lorem ipsum dolor sit amet, consectetur adipisicing          elit. Expedita porro pariatur, earum consequuntur quia        perspiciatis, tenetur inventore consectetur aperiam  doloribus
@@ -128,6 +136,157 @@
             </div>
         </article>
     </section>
+    
+    <section id = "build">
+        <article class = "main_width">
+            <div class = "row">
+                <h2 class = "floater">SKOMPONUJ SWOJE KRZESŁO</h2>
+                <h2 class = "floater_right">PODSUMOWANIE</h2>
+            </div>
+            <div class = "row">
+                <div class = "big_bar floater"></div>
+                <div class = "big_bar floater_right"></div>
+            </div>    
+            <div class = "row" id = "build_row">
+                <div class = "build_box" id = "build_box_1">
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz rodzaj</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Clair</li>
+                            <li>Margarita</li>
+                            <li>Selena</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz kolor</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Czerwony</li>
+                            <li>Czarny</li>
+                            <li>Pomarańczowy</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz materiał</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Tkanina</li>
+                            <li>Skóra</li>
+                        </ul>
+                    </div>
+                    <div class="checkbox check-box">
+                        <input type="checkbox" id="transport" data-transport-price="200">
+                        <label for="transport">Transport</label>
+                    </div>
+                </div>
+                <div class = "build_box" id = "build_box_2">
+                    <img class = "build_img" src="images/1.png">
+                </div>
+                <div class = "build_box" id = "build_box_3">
+                    <div class="panel_left">
+                        <h4 class="title">Twój fotel</h4>
+                        <span class="color"></span>
+                        <span class="pattern"></span>
+                        <span class="transport"></span>
+                    </div>
+                    <div class="panel_right">
+                        <h4 class="title value"></h4>
+                        <span class="color value"></span>
+                        <span class="pattern value"></span>
+                        <span class="transport value"></span>
+                    </div>
+                    <div class="sum_label">SUMA</div>
+                    <div class="sum"><strong></strong></div>
+                    <button id = "order" type = "button">ZAMAWIAM</button>
+                </div>
+            </div>
+        </article>
+    </section>
+    
+
+<!--
+PASTE FROM HERE
+  
+    <section class="application">
+        <div class="main_width">
+            <section class="choice_part inline">
+                <header>
+                    <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                    <span class="green_bell"></span>
+                </header>
+
+                <div class="form">
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz rodzaj</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Clair</li>
+                            <li>Margarita</li>
+                            <li>Selena</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz kolor</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Czerwony</li>
+                            <li>Czarny</li>
+                            <li>Pomarańczowy</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz materiał</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Tkanina</li>
+                            <li>Skóra</li>
+                        </ul>
+                    </div>
+                    <div class="checkbox check-box">
+                        <input type="checkbox" id="transport" data-transport-price="200">
+                        <label for="transport">Transport</label>
+                    </div>
+                    <div class="checkbox"></div>
+                    <span class="list_label inline_text">Transport</span>
+                </div>
+            </section>
+
+            <section class="image_part inline">
+                <img src="images/red_chair.png">
+            </section>
+
+            <section class="summary_part inline">
+                <header class="align_right">
+                    <h3>PODSUMOWANIE</h3>
+                    <span class="green_bell"></span>
+                </header>
+
+                <div class="summary_panel">
+                    <div class="panel_left">
+                        <h4 class="title">Twój fotel</h4>
+                        <span class="color"></span>
+                        <span class="pattern"></span>
+                        <span class="transport"></span>
+                    </div>
+                    <div class="panel_right">
+                        <h4 class="title value"></h4>
+                        <span class="color value"></span>
+                        <span class="pattern value"></span>
+                        <span class="transport value"></span>
+                    </div>
+                    <div class="sum_label">SUMA</div>
+                    <div class="sum"><strong></strong></div>
+                </div>
+                <a href="" class="green_button">Zamawiam</a>
+            </section>
+        </div>
+    </section>
+   
+    PASTE TO HERE
+-->
+
+    
     <section id = "contact">
         <article class = "main_width">
             <h2>KONTAKT</h2>
@@ -141,7 +300,7 @@
                     </div>
                     <div class = "contact_box" id = "contact_box_2">
                         <div id = "contact_img"></div>
-                        <input id = "agree" type = "checkbox" name = "agree" required>
+                        <input class = "checkbox" id = "agree" type = "checkbox" name = "agree" required>
                         
                         <!--REQUIRED above doesnt seem to work-->
                         
@@ -173,4 +332,5 @@
         </article>
     </footer>
 </body>
+<script src="js/app.js" type="text/javascript"></script>
 </html>
